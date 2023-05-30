@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+body,
+html {
+  scrollbar-width: thin !important;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  background: #ccc;
+}
+::-webkit-scrollbar-track-piece {
+  background: #888;
+}
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+.hero-section {
+  background: url("../assets/banner.png");
+  background-size: cover;
+  background-position: center;
+}
+.categories-section {
+  background-image: linear-gradient(#f3edc9, #ffffff, #ffffff);
+}
+.categories-section .swiper-button-prev:after,
+.categories-section .swiper-button-next:after {
+  color: #000 !important;
+}
+
+.mobile-view-header {
+  display: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+  .desktop-view-header {
+    display: none;
+  }
+  .mobile-view-header {
+    display: block;
+  }
+}

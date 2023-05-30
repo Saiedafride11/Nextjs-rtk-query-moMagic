@@ -1,0 +1,1 @@
+"# Nextjs-rtk-query-moMagic" 
